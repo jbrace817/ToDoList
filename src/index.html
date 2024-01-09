@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src=".\taskCard.js" defer></script> -->
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <div class="allTasks">
+      <div class="addNewTask">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="#000000"
+          viewBox="0 0 256 256"
+          class="svg-add"
+        >
+          <path
+            d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"
+          ></path>
+        </svg>
+        <p>Add Task</p>
+      </div>
+      <div class="taskContainer">
+        <div class="title-container">
+          <input type="text" id="task-title" placeholder="Title" />
+          <div class="task-menu">
+            <input type="date" name="dueDate" id="dueDate" />
+            <div class="priority-list">
+              <a href="#" id="task-priority">Priority</a>
+              <ul class="hidden">
+                <li style="color: red">High</li>
+                <li style="color: orange">Medium</li>
+                <li style="color: blue">Low</li>
+                <li>None</li>
+              </ul>
+            </div>
+
+            <a href="#" class="delete-task"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#fd2020"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="desc-container">
+          <textarea
+            name="task-desc"
+            id="task-desc"
+            cols="30"
+            rows="3"
+            placeholder="Description"
+          ></textarea>
+        </div>
+        <div class="btn-save">
+          <button type="button">Save</button>
+        </div>
+      </div>
+      <div class="saved-tasks"></div>
+    </div>
+  </body>
+</html>

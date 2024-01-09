@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.allTasks {
+  border: 1px solid lime;
+  width: 50%;
+  margin: auto;
+}
+
+.addNewTask {
+  display: flex;
+  align-items: center;
+}
+.svg-add {
+  cursor: pointer;
+}
+
+.taskContainer {
+  border: 1px solid black;
+  border-radius: 10px;
+  /* width: 50%; */
+
+  min-height: 10%;
+  padding: 5px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-menu {
+  display: flex;
+  /* width: 50%; */
+  align-items: center;
+  justify-content: end;
+}
+
+.task-menu > * {
+  margin-right: 2%;
+}
+
+#task-priority {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: #6a6767;
+  border: 1px solid #d3d3d3;
+  padding: 0px 02px 2px 02px;
+  width: 62px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.priority-list > ul {
+  list-style-type: none;
+  position: absolute;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.priority-list > ul > li {
+  padding: 5px 15px 5px 15px;
+}
+.priority-list > ul > li:first-child {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.priority-list > ul > li:last-child {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.priority-list > ul > li:hover {
+  cursor: pointer;
+  background-color: #d3d3d3;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.reveal {
+  visibility: visible;
+}
+
+#task-title {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: medium;
+  width: 50%;
+}
+#task-desc {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: normal;
+  width: 100%;
+}
+.btn-save {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.saved-tasks {
+  margin-top: 50px;
+  border: 1px solid red;
+  width: 100%;
+}
